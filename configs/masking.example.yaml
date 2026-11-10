@@ -1,0 +1,22 @@
+# Copy to configs/masking.yaml (git-ignored) and replace the left-hand keys with the raw
+# names in your data cube. The real mapping is never committed.
+# Masked brand labels must begin with "Own Brand" for the manufacturer's own brands.
+brand:
+  BRAND_1: Own Brand A
+  BRAND_2: Own Brand B
+  BRAND_3: Competitor C
+  BRAND_4: Competitor D
+  BRAND_5: Competitor E
+  BRAND_6: Competitor F
+  PL: Private Label
+product_token:        # first word of ProductName -> masked token
+  TOKEN_1: A
+  TOKEN_2: B
+  TOKEN_3: C
+  TOKEN_4: D
+  TOKEN_5: E
+  TOKEN_6: F
+  PL: PL
+geography:
+  RETAILER_1_NAME: Retailer 1
+  RETAILER_2_NAME: Retailer 2

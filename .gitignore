@@ -1,0 +1,32 @@
+# --- Licensed data and confidential mappings: never commit ---
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+*.xlsx
+*.xls
+*.parquet
+configs/masking.yaml
+# Outputs that contain actual weekly volumes at series level
+reports/tables/backtest_forecasts.csv
+reports/tables/rq3_events.csv
+reports/tables/backtest_forecasts_hbnn*.csv
+reports/tables/*_quick.csv
+reports/tables/*panel*
+reports/figures/fig0a_data_preview.png
+
+# --- Python / environment ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+mlruns/
+.DS_Store
+*.pkl
+reports/figures/fig0b_repo_tree.png
+*.npz
+
+# Generated outputs: produced locally by `make`, not versioned
+reports/figures/
+reports/tables/

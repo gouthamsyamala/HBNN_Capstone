@@ -1,0 +1,18 @@
+seed: 640
+raw_file: data/raw/DataCube_v6_Q126.xlsx
+min_weeks_model: 13
+min_mean_acv_model: 1.0
+low_acv_week: 5.0
+sparse_weeks: 52
+sparse_acv: 20
+outlier_z: 4.0
+adstock_alpha: 0.6
+fourier_K: 2
+backtest_origins: [87, 100, 113, 126]
+horizon: 13
+truncate_weeks: 26
+gibbs_iter: 3000
+gibbs_burn: 1000
+masking_file: configs/masking.yaml
+svi_steps: 8000
+svi_draws: 300
